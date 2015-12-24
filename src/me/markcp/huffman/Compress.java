@@ -22,7 +22,6 @@ public class Compress {
         if (file.canRead()){
             HashMap<Character, Integer> dict = new HashMap<Character, Integer>();
             BufferedReader br = new BufferedReader(new FileReader(file));
-            // TODO: 12/23/2015 prevent if file have nothing valid
             String line = br.readLine();
             if (line==null){
                 Utils.msg("Empty file! Program terminated!");
